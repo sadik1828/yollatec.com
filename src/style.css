@@ -1,0 +1,12 @@
+/* src/style.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Buttons (unchanged) */
+.btn { @apply inline-flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-medium transition; }
+.btn-primary { @apply btn bg-brand-600 text-white hover:bg-brand-700 shadow; }
+.btn-outline { @apply btn border border-gray-300 hover:bg-gray-50; }
+
+/* Wider container: ~1440px max width */
+.container-xl { @apply mx-auto px-4 sm:px-6 max-w-[90rem]; }
