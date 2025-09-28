@@ -10,12 +10,18 @@ export default function About() {
           <ShieldCheck size={16} /> About Yollatec.com
         </p>
         <h2 className="mt-2 text-4xl font-extrabold tracking-tight">
-          Security-led technology. <span className="text-brand-700">Built for outcomes.</span>
+          Security-led technology.{" "}
+          <span className="text-brand-700">Built for outcomes.</span>
         </h2>
         <p className="mt-4 text-gray-600">
-          We are a security-first technology partner delivering cybersecurity, cloud, software, and
-          network solutions. Our team brings deep hands-on expertise and globally recognized
-          certifications to design systems that are <span className="font-medium">secure, scalable, and reliable</span>.
+          We are a security-first technology partner delivering cybersecurity,
+          cloud, software, and network solutions. Our team brings deep hands-on
+          expertise and globally recognized certifications to design systems
+          that are{" "}
+          <span className="font-medium">
+            secure, scalable, and reliable
+          </span>
+          .
         </p>
       </div>
 
@@ -38,6 +44,7 @@ export default function About() {
                 </div>
               </div>
             </div>
+
             <div className="rounded-2xl border bg-white p-5 shadow-sm">
               <div className="flex items-start gap-3">
                 <span className="p-2 rounded-lg bg-brand-50 text-brand-700">
@@ -46,11 +53,13 @@ export default function About() {
                 <div>
                   <h3 className="font-semibold">Partnership & Enablement</h3>
                   <p className="mt-1 text-sm text-gray-600">
-                    Workshops, documentation, and training so your team succeeds.
+                    Workshops, documentation, and training so your team
+                    succeeds.
                   </p>
                 </div>
               </div>
             </div>
+
             <div className="rounded-2xl border bg-white p-5 shadow-sm">
               <div className="flex items-start gap-3">
                 <span className="p-2 rounded-lg bg-brand-50 text-brand-700">
@@ -59,11 +68,13 @@ export default function About() {
                 <div>
                   <h3 className="font-semibold">Standards-Aligned</h3>
                   <p className="mt-1 text-sm text-gray-600">
-                    Guided by ISO/IEC best practices and proven reference architectures.
+                    Guided by ISO/IEC best practices and proven reference
+                    architectures.
                   </p>
                 </div>
               </div>
             </div>
+
             <div className="rounded-2xl border bg-white p-5 shadow-sm">
               <div className="flex items-start gap-3">
                 <span className="p-2 rounded-lg bg-brand-50 text-brand-700">
@@ -72,7 +83,8 @@ export default function About() {
                 <div>
                   <h3 className="font-semibold">Measured Outcomes</h3>
                   <p className="mt-1 text-sm text-gray-600">
-                    Clear KPIs, post-implementation reviews, and continuous improvement.
+                    Clear KPIs, post-implementation reviews, and continuous
+                    improvement.
                   </p>
                 </div>
               </div>
@@ -81,9 +93,17 @@ export default function About() {
 
           {/* Certifications badge strip */}
           <div className="rounded-2xl border bg-gradient-to-br from-brand-50/80 to-white p-5">
-            <p className="text-sm font-semibold text-brand-700">Team Certifications</p>
+            <p className="text-sm font-semibold text-brand-700">
+              Team Certifications
+            </p>
             <ul className="mt-3 flex flex-wrap gap-2 text-xs">
-              {["CISSP", "OSCP", "OSWE", "BSCP", "ISO 27001 Lead Implementer"].map((cert) => (
+              {[
+                "CISSP",
+                "OSCP",
+                "OSWE",
+                "BSCP",
+                "ISO 27001 Lead Implementer",
+              ].map((cert) => (
                 <li
                   key={cert}
                   className="rounded-full border bg-white px-3 py-1 text-gray-700 shadow-sm"
@@ -117,7 +137,9 @@ export default function About() {
             </div>
             <div className="rounded-xl bg-white p-5 text-center border shadow-sm">
               <p className="text-3xl font-extrabold tracking-tight">24/7</p>
-              <p className="mt-1 text-xs text-gray-500">Support Availability</p>
+              <p className="mt-1 text-xs text-gray-500">
+                Support Availability
+              </p>
             </div>
           </div>
         </div>
