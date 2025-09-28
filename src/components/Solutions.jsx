@@ -1,3 +1,4 @@
+// Solutions.jsx
 import React from "react";
 import {
   GraduationCap,
@@ -6,6 +7,9 @@ import {
   Network,
   ShieldCheck,
   ArrowRight,
+  BookOpen,
+  BarChart3,
+  Cpu,
 } from "lucide-react";
 
 export default function Solutions() {
@@ -29,10 +33,34 @@ export default function Solutions() {
       points: ["KYC / AML controls", "API gateways & HSM", "SIEM & fraud rules"],
     },
     {
-      title: "Telecom & Enterprise",
-      text: "High-availability networks, secure VoIP & SIEM.",
+      title: "Training & Workshops",
+      text: "Professional development through hands-on seminars and workshops.",
+      icon: BookOpen,
+      points: ["Cybersecurity training", "Technical skill development", "Industry certification prep"],
+    },
+    {
+      title: "Data Analytics",
+      text: "Transform data into actionable insights for business growth.",
+      icon: BarChart3,
+      points: ["Business intelligence", "Data visualization", "Predictive analytics"],
+    },
+    {
+      title: "Networking & Infrastructure",
+      text: "Robust network solutions for seamless connectivity and performance.",
       icon: Network,
-      points: ["HA core networks", "VoIP security", "SOC/SIEM onboarding"],
+      points: ["Network design & implementation", "Performance optimization", "Security integration"],
+    },
+    {
+      title: "Server Management",
+      text: "Comprehensive server solutions for reliability and efficiency.",
+      icon: Cpu,
+      points: ["Server deployment", "Performance monitoring", "Maintenance & support"],
+    },
+    {
+      title: "Cyber Security",
+      text: "Comprehensive protection against evolving digital threats.",
+      icon: ShieldCheck,
+      points: ["Threat detection", "Vulnerability assessment", "Incident response"],
     },
   ];
 
@@ -116,7 +144,7 @@ export default function Solutions() {
         <div className="mt-10 rounded-2xl border border-white/15 bg-white/10 p-5 backdrop-blur">
           <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
             <p className="text-sm text-brand-100">
-              Not sure which track fits? We’ll map requirements to the best architecture.
+              Not sure which track fits? We'll map requirements to the best architecture.
             </p>
             <a
               href="#contact"

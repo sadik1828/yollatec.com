@@ -14,20 +14,21 @@ export default function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
+          {/* UPDATED TAGLINE */}
           <p className="inline-flex items-center gap-2 text-sm font-semibold text-brand-700">
-            <ShieldCheck size={16} /> Trusted Cybersecurity & IT
+            <ShieldCheck size={16} /> Trusted & Comprehensive IT Services
           </p>
           <h1 className="mt-3 text-4xl md:text-5xl font-extrabold leading-tight">
             Secure your business.{" "}
             <span className="text-brand-700">Scale with confidence.</span>
           </h1>
+          {/* UPDATED DESCRIPTIVE PARAGRAPH */}
           <p className="mt-5 text-gray-600 max-w-2xl">
             At <span className="font-semibold">Yollatec.com</span>, we deliver
-            end-to-end technology solutions that help organizations thrive in
-            the digital era. From advanced cybersecurity and 24/7 SOC operations
-            to cloud transformation, custom software engineering, and resilient
-            network infrastructure, we design secure, scalable, and reliable
-            systems tailored to your business ambitions.
+            all-inclusive **end-to-end IT solutions** that help organizations thrive in
+            the digital era. From robust cloud and network infrastructure, custom software
+            engineering, and advanced data management to 24/7 security and operations, we
+            design secure, scalable, and reliable systems tailored to your business ambitions.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">

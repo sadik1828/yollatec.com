@@ -1,14 +1,17 @@
+// Services.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import { services } from "../data/services";
 import {
   ShieldCheck,
-  Cloud,
   Code,
   Server,
   Camera,
   Megaphone,
   Users,
+  BookOpen,
+  BarChart3,
+  Cpu,
 } from "lucide-react";
 
 const iconMap = {
@@ -19,7 +22,9 @@ const iconMap = {
   consultation: Users,
   "digital-marketing": Megaphone,
   surveillance: Camera,
-  "cloud-management": Cloud,
+  "training-seminars": BookOpen,
+  "data-analytics": BarChart3,
+  "server-management": Cpu,
 };
 
 // brand color blocks per service (adjust to taste)
@@ -34,7 +39,9 @@ const colorMap = {
   "digital-marketing":
     "bg-gradient-to-br from-fuchsia-500 to-fuchsia-600 text-white",
   surveillance: "bg-gradient-to-br from-indigo-500 to-indigo-600 text-white",
-  "cloud-management": "bg-gradient-to-br from-sky-500 to-sky-600 text-white",
+  "training-seminars": "bg-gradient-to-br from-amber-500 to-amber-600 text-white",
+  "data-analytics": "bg-gradient-to-br from-teal-500 to-teal-600 text-white",
+  "server-management": "bg-gradient-to-br from-slate-500 to-slate-600 text-white",
 };
 
 export default function Services() {
@@ -43,9 +50,9 @@ export default function Services() {
     services.find((s) => s.slug === "network-infrastructure"),
     services.find((s) => s.slug === "software-development"),
     services.find((s) => s.slug === "cybersecurity"),
-    services.find((s) => s.slug === "consultation"), // acts like IT Management / IT Consultancy
-    services.find((s) => s.slug === "surveillance"),
-    services.find((s) => s.slug === "digital-marketing"),
+    services.find((s) => s.slug === "training-seminars"),
+    services.find((s) => s.slug === "data-analytics"),
+    services.find((s) => s.slug === "server-management"),
   ].filter(Boolean);
 
   return (
