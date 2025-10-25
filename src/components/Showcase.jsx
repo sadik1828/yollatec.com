@@ -10,8 +10,8 @@ const pics = [
     caption: "Server Management Tools",
   },
   {
-    src: "https://techtweekinfotech.com/wp-content/uploads/2024/05/Server-Management.jpg",
-    caption: "Server Infrastructure Management",
+    src: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/337976457/original/d01dde56cd1e4143a2e7199f691f2dea5351685c/make-your-web-however-you-want.jpg",
+    caption: "Application Development",
   },
   {
     src: "https://kellyofficesolutions.com/wp-content/uploads/2020/10/NMS.png",

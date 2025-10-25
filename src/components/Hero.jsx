@@ -1,83 +1,205 @@
+// components/Hero.jsx
 import React from "react";
-import { Mail, Phone, ShieldCheck, Server } from "lucide-react";
+import { Mail, Phone, ShieldCheck, Server, Cpu, Cable, Zap, Wifi } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-brand-50 to-white">
-      {/* subtle background flare */}
-      <div className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full bg-brand-600/10 blur-3xl" />
-      <div className="container-xl py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-32 w-80 h-80 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-32 w-80 h-80 bg-gradient-to-r from-green-400/10 to-cyan-400/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-brand-400/5 to-blue-400/5 rounded-full blur-3xl"></div>
+      </div>
+
+      {/* Floating Icons */}
+      <div className="absolute top-20 left-10 animate-float">
+        <div className="w-4 h-4 bg-brand-400/20 rounded-full"></div>
+      </div>
+      <div className="absolute top-40 right-20 animate-float" style={{ animationDelay: '1s' }}>
+        <div className="w-6 h-6 bg-blue-400/20 rounded-full"></div>
+      </div>
+      <div className="absolute bottom-40 left-20 animate-float" style={{ animationDelay: '2s' }}>
+        <div className="w-3 h-3 bg-purple-400/20 rounded-full"></div>
+      </div>
+
+      <div className="container-xl py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
         <motion.div
           initial={{ opacity: 0, x: -24 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
+          className="space-y-8"
         >
-          {/* UPDATED TAGLINE */}
-          <p className="inline-flex items-center gap-2 text-sm font-semibold text-brand-700">
-            <ShieldCheck size={16} /> Trusted & Comprehensive IT Services
-          </p>
-          <h1 className="mt-3 text-4xl md:text-5xl font-extrabold leading-tight">
-            Secure your business.{" "}
-            <span className="text-brand-700">Scale with confidence.</span>
-          </h1>
-          {/* UPDATED DESCRIPTIVE PARAGRAPH */}
-          <p className="mt-5 text-gray-600 max-w-2xl">
-            At <span className="font-semibold">Yollatec.com</span>, we deliver
-            all-inclusive **end-to-end IT solutions** that help organizations thrive in
-            the digital era. From robust cloud and network infrastructure, custom software
-            engineering, and advanced data management to 24/7 security and operations, we
-            design secure, scalable, and reliable systems tailored to your business ambitions.
-          </p>
+          {/* Tagline */}
+          <div className="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 shadow-lg shadow-black/5">
+            <div className="flex items-center gap-2">
+              <div className="w-2 h-2 bg-brand-500 rounded-full animate-pulse"></div>
+              <ShieldCheck size={16} className="text-brand-600 dark:text-brand-400" />
+              <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                Trusted & Comprehensive IT Services
+              </span>
+            </div>
+          </div>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link to="/contact" className="btn-primary">
-              <Mail size={16} /> Get a Free Consultation
+          {/* Main Heading */}
+          <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight dark:text-white">
+            Secure your business.{" "}
+            <span className="bg-gradient-to-r from-brand-600 to-blue-600 dark:from-brand-400 dark:to-blue-400 bg-clip-text text-transparent">
+              Scale with confidence.
+            </span>
+          </h1>
+
+          {/* Enhanced Description with Beautiful Typography */}
+          <div className="space-y-4">
+            <p className="text-xl lg:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed font-light">
+              At <span className="font-semibold text-brand-600 dark:text-brand-400 bg-gradient-to-r from-brand-600 to-blue-600 dark:from-brand-400 dark:to-blue-400 bg-clip-text text-transparent">Yollatec.com</span>, we deliver
+              all-inclusive <span className="font-semibold text-gray-900 dark:text-white bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">end-to-end IT solutions</span> that help organizations thrive in
+              the digital era.
+            </p>
+            
+            <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-400 leading-relaxed font-light">
+              From <span className="font-medium text-gray-800 dark:text-gray-200">robust cloud and network infrastructure</span>, 
+              <span className="font-medium text-gray-800 dark:text-gray-200"> custom software engineering</span>, and 
+              <span className="font-medium text-gray-800 dark:text-gray-200"> advanced data management</span> to 
+              <span className="font-medium text-gray-800 dark:text-gray-200"> 24/7 security and operations</span>,
+              <span className="font-medium text-gray-800 dark:text-gray-200"> solar systems installation</span>,
+              <span className="font-medium text-gray-800 dark:text-gray-200"> server racks and cabling</span>,
+              <span className="font-medium text-gray-800 dark:text-gray-200"> Internet of Things (IoT)</span>, and
+              <span className="font-medium text-gray-800 dark:text-gray-200"> comprehensive electrical installations</span> — 
+              we design <span className="font-semibold text-green-600 dark:text-green-400">secure</span>, 
+              <span className="font-semibold text-blue-600 dark:text-blue-400"> scalable</span>, and 
+              <span className="font-semibold text-purple-600 dark:text-purple-400"> reliable systems</span> tailored to your business ambitions.
+            </p>
+          </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link to="/contact" className="group relative bg-gradient-to-r from-brand-600 to-blue-600 hover:from-brand-700 hover:to-blue-700 text-white font-semibold py-4 px-8 rounded-2xl shadow-lg shadow-brand-500/25 hover:shadow-xl hover:shadow-brand-500/30 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3 overflow-hidden">
+              <div className="absolute inset-0 bg-white/10 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
+              <Mail size={20} className="relative z-10" />
+              <span className="relative z-10">Get a Free Consultation</span>
             </Link>
-            <Link to="/services" className="btn-outline">
-              <Phone size={16} /> Our Services
+            <Link to="/services" className="group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold py-4 px-8 rounded-2xl hover:border-brand-400 hover:text-brand-600 dark:hover:border-brand-500 dark:hover:text-brand-400 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3">
+              <Phone size={20} />
+              Our Services
             </Link>
           </div>
 
-          <div className="mt-8 grid grid-cols-2 gap-3 max-w-md">
-            <div className="flex items-center gap-3">
-              <span className="p-2 rounded-md bg-brand-50 text-brand-700">
-                <ShieldCheck size={18} />
-              </span>
+          {/* Enhanced Features Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
+            <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-green-200 dark:hover:border-green-800 transition-all duration-300 group">
+              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-green-500/25 group-hover:scale-110 transition-transform duration-300">
+                <ShieldCheck size={20} />
+              </div>
               <div>
-                <p className="text-sm font-semibold">ISO 27001 Ready</p>
-                <p className="text-xs text-gray-500">Policies & Audit Support</p>
+                <p className="font-bold text-gray-900 dark:text-white">ISO 27001 Ready</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Policies & Audit Support</p>
               </div>
             </div>
-            <div className="flex items-center gap-3">
-              <span className="p-2 rounded-md bg-brand-50 text-brand-700">
-                <Server size={18} />
-              </span>
+            <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-200 dark:hover:border-blue-800 transition-all duration-300 group">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/25 group-hover:scale-110 transition-transform duration-300">
+                <Server size={20} />
+              </div>
               <div>
-                <p className="text-sm font-semibold">24/7 Monitoring</p>
-                <p className="text-xs text-gray-500">SOC as a Service</p>
+                <p className="font-bold text-gray-900 dark:text-white">24/7 Monitoring</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">SOC as a Service</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-200 dark:hover:border-purple-800 transition-all duration-300 group">
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-purple-500/25 group-hover:scale-110 transition-transform duration-300">
+                <Cable size={20} />
+              </div>
+              <div>
+                <p className="font-bold text-gray-900 dark:text-white">Infrastructure</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Racks & Cabling</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-orange-200 dark:hover:border-orange-800 transition-all duration-300 group">
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-orange-500/25 group-hover:scale-110 transition-transform duration-300">
+                <Zap size={20} />
+              </div>
+              <div>
+                <p className="font-bold text-gray-900 dark:text-white">Energy Solutions</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">Solar & Electrical</p>
               </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Technology-themed image */}
+        {/* Dual Image Layout */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="order-first md:order-last"
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="space-y-6"
         >
-          <div className="rounded-2xl overflow-hidden shadow-xl bg-white p-3">
+          {/* Original Technology Image */}
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-gray-400/20 dark:shadow-black/30 group">
             <img
-              className="w-full h-80 object-cover rounded-xl"
+              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
               src="https://cdn-ialap.nitrocdn.com/bSxMvRMJjpvESeBpWPWSavCeSWXQHFjk/assets/images/optimized/rev-4f86c40/www.zucisystems.com/wp-content/uploads/2021/07/icon-internet-world-hands-businessman-network-technology-communication-scaled.jpg"
-              alt="Technology concept"
+              alt="Global technology network and digital transformation"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+            <div className="absolute bottom-4 left-4">
+              <div className="flex items-center gap-2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl px-3 py-2">
+                <Cpu size={16} className="text-brand-600 dark:text-brand-400" />
+                <span className="text-sm font-semibold text-gray-900 dark:text-white">Digital Innovation</span>
+              </div>
+            </div>
+          </div>
+
+          {/* New Rack and Cable Management Image */}
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-gray-400/20 dark:shadow-black/30 group">
+            <img
+              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              src="https://bt-pon.com/wp-content/uploads/2021/11/How-To-Organize-Cables-In-Rack-Cabinet.jpg"
+              alt="Professional server rack and cable management infrastructure"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+            <div className="absolute bottom-4 left-4">
+              <div className="flex items-center gap-2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl px-3 py-2">
+                <Cable size={16} className="text-green-600 dark:text-green-400" />
+                <span className="text-sm font-semibold text-gray-900 dark:text-white">Infrastructure Excellence</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Service Highlights */}
+          <div className="grid grid-cols-3 gap-4">
+            <div className="text-center p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white mx-auto mb-2">
+                <ShieldCheck size={16} />
+              </div>
+              <p className="text-xs font-semibold text-gray-700 dark:text-gray-300">Security</p>
+            </div>
+            <div className="text-center p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50">
+              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white mx-auto mb-2">
+                <Server size={16} />
+              </div>
+              <p className="text-xs font-semibold text-gray-700 dark:text-gray-300">Infrastructure</p>
+            </div>
+            <div className="text-center p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50">
+              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center text-white mx-auto mb-2">
+                <Wifi size={16} />
+              </div>
+              <p className="text-xs font-semibold text-gray-700 dark:text-gray-300">Networking</p>
+            </div>
           </div>
         </motion.div>
       </div>
+
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+        }
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+      `}</style>
     </section>
   );
 }

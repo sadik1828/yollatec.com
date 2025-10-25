@@ -1,9 +1,242 @@
+// data/services.js
 export const services = [
+  {
+    slug: "network-design-implementation",
+    title: "Network Design & Implementation",
+    summary: "Complete network infrastructure design, implementation, and management for optimal performance and security.",
+    bullets: [
+      "Site surveys and network requirement assessment",
+      "LAN/WAN architecture and structured cabling (Cat6/Cat6A/Fiber)",
+      "VLAN segmentation, routing, and switching design",
+      "Secure configuration of routers, firewalls, and access points",
+      "Network monitoring and centralized management systems"
+    ],
+    categories: ["Network Infrastructure", "Security", "Implementation"],
+    pricing: [
+      {
+        tier: "Small Office",
+        price: "USD 2,500+",
+        includes: [
+          "Site survey & assessment",
+          "Basic network design",
+          "Router & switch configuration",
+          "Wi-Fi setup"
+        ],
+      },
+      {
+        tier: "Enterprise",
+        price: "USD 8,000+",
+        includes: [
+          "Comprehensive network architecture",
+          "VLAN segmentation",
+          "Advanced security configuration",
+          "Centralized monitoring"
+        ],
+      },
+      {
+        tier: "Custom Solution",
+        price: "Custom Quote",
+        includes: [
+          "Multi-site deployment",
+          "High-availability setup",
+          "24/7 monitoring & support",
+          "Documentation & training"
+        ],
+      },
+    ],
+    heroImage: "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=1600&auto=format&fit=crop",
+  },
+  {
+    slug: "rack-installation-cabling",
+    title: "Rack Installation and Cabling",
+    summary: "Professional rack assembly, cable management, and fiber optic solutions for data centers and server rooms.",
+    bullets: [
+      "Rack assembly and mounting",
+      "Patch panel and PDU installation",
+      "Cable labeling and color-coding",
+      "Fiber splicing and termination",
+      "Neat cable management and airflow optimization"
+    ],
+    categories: ["Data Center", "Infrastructure", "Professional Services"],
+    pricing: [
+      {
+        tier: "Standard Rack",
+        price: "USD 1,200+",
+        includes: [
+          "Rack assembly & mounting",
+          "Basic cable management",
+          "Patch panel installation",
+          "Cable labeling"
+        ],
+      },
+      {
+        tier: "Advanced Setup",
+        price: "USD 3,500+",
+        includes: [
+          "Fiber optic termination",
+          "Advanced cable management",
+          "PDU installation",
+          "Documentation"
+        ],
+      },
+      {
+        tier: "Enterprise Data Center",
+        price: "Custom Quote",
+        includes: [
+          "Multi-rack deployment",
+          "Fiber backbone installation",
+          "Airflow optimization",
+          "Compliance certification"
+        ],
+      },
+    ],
+    heroImage: "https://images.unsplash.com/photo-1590658165737-15a047b8b5e4?q=80&w=1600&auto=format&fit=crop",
+  },
+  {
+    slug: "iot-smart-systems",
+    title: "IoT & Smart Systems Integration",
+    summary: "Smart automation solutions for offices, buildings, and industrial environments with seamless integration.",
+    bullets: [
+      "Smart office and building automation (lighting, HVAC, sensors)",
+      "Smart door access control and biometric systems",
+      "Smart surveillance and motion detection",
+      "Environmental and energy monitoring via IoT sensors",
+      "Integration with dashboards, mobile apps, or cloud platforms",
+      "IoT protocols: MQTT, Zigbee, LoRaWAN, and Modbus"
+    ],
+    categories: ["IoT", "Automation", "Smart Systems", "Integration"],
+    pricing: [
+      {
+        tier: "Basic Automation",
+        price: "USD 3,000+",
+        includes: [
+          "Smart lighting control",
+          "Basic sensor deployment",
+          "Mobile app integration",
+          "System configuration"
+        ],
+      },
+      {
+        tier: "Advanced Integration",
+        price: "USD 7,500+",
+        includes: [
+          "Full building automation",
+          "Biometric access control",
+          "Energy monitoring",
+          "Custom dashboard"
+        ],
+      },
+      {
+        tier: "Enterprise IoT",
+        price: "Custom Quote",
+        includes: [
+          "Multi-protocol integration",
+          "Custom mobile applications",
+          "24/7 monitoring",
+          "API development"
+        ],
+      },
+    ],
+    heroImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop",
+  },
+  {
+    slug: "solar-power-systems",
+    title: "Solar Power System Installation",
+    summary: "Complete solar energy solutions including design, installation, and maintenance for reliable power.",
+    bullets: [
+      "Design and installation of on-grid, off-grid, and hybrid solar systems",
+      "Solar panel mounting, inverter configuration, and battery setup",
+      "Energy audit and load analysis",
+      "Solar-powered network and IoT systems integration",
+      "Preventive maintenance and performance optimization",
+      "Smart monitoring for solar efficiency and fault alerts"
+    ],
+    categories: ["Solar Energy", "Renewable", "Power Systems", "IoT Integration"],
+    pricing: [
+      {
+        tier: "Residential",
+        price: "USD 4,000+",
+        includes: [
+          "Energy audit & load analysis",
+          "Basic solar system installation",
+          "Inverter configuration",
+          "Basic monitoring"
+        ],
+      },
+      {
+        tier: "Commercial",
+        price: "USD 12,000+",
+        includes: [
+          "Commercial solar design",
+          "Hybrid system installation",
+          "Battery backup setup",
+          "Smart monitoring system"
+        ],
+      },
+      {
+        tier: "Industrial",
+        price: "Custom Quote",
+        includes: [
+          "Large-scale solar deployment",
+          "Grid integration",
+          "IoT monitoring & alerts",
+          "Maintenance contract"
+        ],
+      },
+    ],
+    heroImage: "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1600&auto=format&fit=crop",
+  },
+  {
+    slug: "electrical-installation",
+    title: "Electrical Installation & Wiring Services",
+    summary: "Professional electrical services for industrial, commercial, and residential applications.",
+    bullets: [
+      "Electrical design, planning, and implementation",
+      "Internal and external wiring (industrial, commercial, residential)",
+      "Circuit breaker panels and distribution boards setup",
+      "Earthing and surge protection systems",
+      "UPS and backup power system integration",
+      "Safety inspections and compliance with IEC standards"
+    ],
+    categories: ["Electrical", "Wiring", "Safety", "Power Systems"],
+    pricing: [
+      {
+        tier: "Residential",
+        price: "USD 800+",
+        includes: [
+          "Electrical planning & design",
+          "Basic wiring installation",
+          "Circuit breaker setup",
+          "Safety inspection"
+        ],
+      },
+      {
+        tier: "Commercial",
+        price: "USD 2,500+",
+        includes: [
+          "Commercial electrical design",
+          "Distribution board setup",
+          "Surge protection",
+          "UPS integration"
+        ],
+      },
+      {
+        tier: "Industrial",
+        price: "Custom Quote",
+        includes: [
+          "Industrial electrical systems",
+          "High-capacity power distribution",
+          "Backup power solutions",
+          "Compliance certification"
+        ],
+      },
+    ],
+    heroImage: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=1600&auto=format&fit=crop",
+  },
   {
     slug: "cybersecurity",
     title: "Cybersecurity",
-    summary:
-      "Offensive + defensive services aligned to best practices and ISO frameworks.",
+    summary: "Offensive + defensive services aligned to best practices and ISO frameworks.",
     bullets: [
       "Penetration testing",
       "SOC as a Service",
@@ -47,41 +280,12 @@ export const services = [
         ],
       },
     ],
-    heroImage:
-      "https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?q=80&w=1600&auto=format&fit=crop",
-  },
-  {
-    slug: "cloud-management",
-    title: "Cloud Management",
-    summary:
-      "Migration, Zero Trust, IAM, backup & disaster recovery across AWS/Azure/GCP.",
-    bullets: ["Cloud migration", "Zero Trust / IAM", "Backup & DR", "FinOps"],
-    categories: ["Architecture", "Security & IAM", "Operations", "Cost Control"],
-    pricing: [
-      {
-        tier: "Starter",
-        price: "USD 1,200+",
-        includes: ["Cloud readiness review", "Backup baseline", "IAM hygiene"],
-      },
-      {
-        tier: "Growth",
-        price: "USD 2,800+",
-        includes: ["Landing zone", "CIS hardening", "Monitoring & alerts"],
-      },
-      {
-        tier: "Managed",
-        price: "Custom",
-        includes: ["24/7 ops", "SLA support", "BC/DR runbooks"],
-      },
-    ],
-    heroImage:
-      "https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?q=80&w=1600&auto=format&fit=crop",
   },
   {
     slug: "software-development",
     title: "Software Development",
-    summary:
-      "Web & mobile apps, ERPs, secure SDLC and API integrations built for scale.",
+    summary: "Web & mobile apps, ERPs, secure SDLC and API integrations built for scale.",
     bullets: ["Product discovery", "UX/UI", "APIs & integrations", "DevOps CI/CD"],
     categories: ["Web & Mobile", "ERP/Backoffice", "Integrations", "DevOps"],
     pricing: [
@@ -101,113 +305,6 @@ export const services = [
         includes: ["Engineers + PM", "SLA & roadmap", "Quarterly reviews"],
       },
     ],
-    heroImage:
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop",
-  },
-  {
-    slug: "network-infrastructure",
-    title: "Network & Infrastructure",
-    summary:
-      "Design, firewalls, VPNs, servers, PBX/VoIP — secure, high-availability architecture.",
-    bullets: ["Firewalls & VPN", "Switching/Wi-Fi", "PBX/VoIP", "Server hardening"],
-    categories: ["Security", "Connectivity", "Collaboration", "Datacenter"],
-    pricing: [
-      {
-        tier: "Branch",
-        price: "USD 1,300+",
-        includes: ["Firewall + VPN", "Wi-Fi survey", "Hardening baseline"],
-      },
-      {
-        tier: "HQ",
-        price: "USD 5,500+",
-        includes: ["HA firewalls", "LAN/WAN design", "Monitoring setup"],
-      },
-      {
-        tier: "Managed",
-        price: "Custom",
-        includes: ["24/7 NOC", "Change mgmt", "Capacity & tuning"],
-      },
-    ],
-    heroImage:
-      "https://images.unsplash.com/photo-1587202372775-98927b9800b7?q=80&w=1600&auto=format&fit=crop",
-  },
-  {
-    slug: "surveillance",
-    title: "Surveillance",
-    summary: "CCTV, access control, biometrics, and smart building systems.",
-    bullets: ["IP CCTV", "Access control", "Biometrics", "VMS analytics"],
-    categories: ["Cameras", "Access", "Analytics", "IoT/Smart"],
-    pricing: [
-      {
-        tier: "Site Kit",
-        price: "USD 2,400+",
-        includes: ["8–12 IP cameras", "NVR", "Remote viewing"],
-      },
-      {
-        tier: "Campus",
-        price: "USD 7,900+",
-        includes: ["30+ cameras", "Central VMS", "Role-based access"],
-      },
-      {
-        tier: "Enterprise",
-        price: "Custom",
-        includes: ["Redundant storage", "ANPR/AI", "SLA & support"],
-      },
-    ],
-    heroImage:
-      "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?q=80&w=1600&auto=format&fit=crop",
-  },
-  {
-    slug: "digital-marketing",
-    title: "Digital Marketing",
-    summary:
-      "SEO, SMM, content, paid campaigns and reputation management that convert.",
-    bullets: ["SEO/SEM", "Social ads", "Content", "Analytics"],
-    categories: ["Search", "Social", "Content", "Measurement"],
-    pricing: [
-      {
-        tier: "Launch",
-        price: "USD 900+",
-        includes: ["SEO basics", "1 campaign", "Reporting"],
-      },
-      {
-        tier: "Growth",
-        price: "USD 1,900+",
-        includes: ["Multi-channel ads", "Content pack", "A/B testing"],
-      },
-      {
-        tier: "Performance",
-        price: "Custom",
-        includes: ["Always-on", "CRO", "Attribution model"],
-      },
-    ],
-    heroImage:
-      "https://images.unsplash.com/photo-1518085250887-2f903c200fee?q=80&w=1600&auto=format&fit=crop",
-  },
-  {
-    slug: "consultation",
-    title: "Consultation",
-    summary: "Strategy, compliance and digital transformation engagements.",
-    bullets: ["IT strategy", "Policy & SOPs", "ISO readiness", "Vendor selection"],
-    categories: ["Strategy", "Compliance", "Architecture", "Coaching"],
-    pricing: [
-      {
-        tier: "Workshop",
-        price: "USD 650",
-        includes: ["Half-day session", "Action plan", "Roadmap draft"],
-      },
-      {
-        tier: "Engagement",
-        price: "USD 3,500+",
-        includes: ["Current-state review", "Target architecture", "3-month plan"],
-      },
-      {
-        tier: "Advisory",
-        price: "Monthly",
-        includes: ["Fractional CTO/CISO", "Quarterly reviews", "On-call"],
-      },
-    ],
-    heroImage:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1600&auto=format&fit=crop",
-  },
+    heroImage: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop",
+  }
 ];

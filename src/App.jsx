@@ -1,5 +1,7 @@
+// App.jsx
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./context/ThemeContext";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
@@ -7,23 +9,27 @@ import AboutPage from "./pages/AboutPage.jsx";
 import ServicesPage from "./pages/ServicesPage.jsx";
 import SolutionsPage from "./pages/SolutionsPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
-import ServiceDetail from "./pages/ServiceDetail.jsx"; // ← new
+import PortfolioPage from "./pages/PortfolioPage.jsx";
+import ServiceDetail from "./pages/ServiceDetail.jsx";
 
 export default function App() {
   return (
-    <div className="min-h-screen flex flex-col text-gray-900">
-      <Header />
-      <main className="flex-1">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/services/:slug" element={<ServiceDetail />} /> {/* new */}
-          <Route path="/solutions" element={<SolutionsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="min-h-screen flex flex-col text-gray-900 dark:text-gray-100 bg-white dark:bg-gray-900 transition-colors">
+        <Header />
+        <main className="flex-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/services/:slug" element={<ServiceDetail />} />
+            <Route path="/solutions" element={<SolutionsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
