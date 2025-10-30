@@ -44,7 +44,7 @@ export default function Hero() {
           </div>
 
           {/* Main Heading - Single Color */}
-          <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
             <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 dark:from-white dark:via-gray-200 dark:to-gray-300 bg-clip-text text-transparent">
               Secure your business. Scale with confidence.
             </span>
@@ -52,13 +52,13 @@ export default function Hero() {
 
           {/* Enhanced Description with Beautiful Typography */}
           <div className="space-y-4">
-            <p className="text-xl lg:text-2xl leading-relaxed font-light text-gray-700 dark:text-gray-300">
-              At <span className="font-semibold text-gray-900 dark:text-white">Yollatec.com</span>, we deliver
+            <p className="text-lg lg:text-xl leading-relaxed font-light text-gray-700 dark:text-gray-300">
+              At <span className="font-semibold text-gray-900 dark:text-white">Yollatec</span>, we deliver
               all-inclusive <span className="font-semibold text-gray-900 dark:text-white">end-to-end IT solutions</span> that help organizations thrive in
               the digital era.
             </p>
 
-            <p className="text-lg lg:text-xl leading-relaxed font-light text-gray-700 dark:text-gray-300">
+            <p className="text-base lg:text-lg leading-relaxed font-light text-gray-700 dark:text-gray-300">
               From <span className="font-medium text-gray-900 dark:text-white">robust cloud and network infrastructure</span>,
               <span className="font-medium text-gray-900 dark:text-white"> custom software engineering</span>, and
               <span className="font-medium text-gray-900 dark:text-white"> advanced data management</span> to
