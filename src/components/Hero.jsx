@@ -35,42 +35,41 @@ export default function Hero() {
           {/* Tagline */}
           <div className="inline-flex items-center gap-3 px-4 py-2 rounded-2xl bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 shadow-lg shadow-black/5">
             <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-brand-500 rounded-full animate-pulse"></div>
-              <ShieldCheck size={16} className="text-brand-600 dark:text-brand-400" />
-              <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+              <div className="w-2 h-2 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-full animate-pulse"></div>
+              <ShieldCheck size={16} className="text-gradient-to-r from-emerald-600 to-cyan-600" />
+              <span className="text-sm font-semibold bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-300 dark:to-white bg-clip-text text-transparent">
                 Trusted & Comprehensive IT Services
               </span>
             </div>
           </div>
 
-          {/* Main Heading */}
-          <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight dark:text-white">
-            Secure your business.{" "}
-            <span className="bg-gradient-to-r from-brand-600 to-blue-600 dark:from-brand-400 dark:to-blue-400 bg-clip-text text-transparent">
-              Scale with confidence.
+          {/* Main Heading - Single Color */}
+          <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+            <span className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 dark:from-white dark:via-gray-200 dark:to-gray-300 bg-clip-text text-transparent">
+              Secure your business. Scale with confidence.
             </span>
           </h1>
 
           {/* Enhanced Description with Beautiful Typography */}
           <div className="space-y-4">
-            <p className="text-xl lg:text-2xl text-gray-700 dark:text-gray-300 leading-relaxed font-light">
-              At <span className="font-semibold text-brand-600 dark:text-brand-400 bg-gradient-to-r from-brand-600 to-blue-600 dark:from-brand-400 dark:to-blue-400 bg-clip-text text-transparent">Yollatec.com</span>, we deliver
-              all-inclusive <span className="font-semibold text-gray-900 dark:text-white bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">end-to-end IT solutions</span> that help organizations thrive in
+            <p className="text-xl lg:text-2xl leading-relaxed font-light">
+              At <span className="font-semibold bg-gradient-to-r from-brand-600 to-blue-600 dark:from-brand-400 dark:to-blue-300 bg-clip-text text-transparent">Yollatec.com</span>, we deliver
+              all-inclusive <span className="font-semibold bg-gradient-to-r from-gray-800 to-gray-600 dark:from-white dark:to-gray-200 bg-clip-text text-transparent">end-to-end IT solutions</span> that help organizations thrive in
               the digital era.
             </p>
             
-            <p className="text-lg lg:text-xl text-gray-600 dark:text-gray-400 leading-relaxed font-light">
-              From <span className="font-medium text-gray-800 dark:text-gray-200">robust cloud and network infrastructure</span>, 
-              <span className="font-medium text-gray-800 dark:text-gray-200"> custom software engineering</span>, and 
-              <span className="font-medium text-gray-800 dark:text-gray-200"> advanced data management</span> to 
-              <span className="font-medium text-gray-800 dark:text-gray-200"> 24/7 security and operations</span>,
-              <span className="font-medium text-gray-800 dark:text-gray-200"> solar systems installation</span>,
-              <span className="font-medium text-gray-800 dark:text-gray-200"> server racks and cabling</span>,
-              <span className="font-medium text-gray-800 dark:text-gray-200"> Internet of Things (IoT)</span>, and
-              <span className="font-medium text-gray-800 dark:text-gray-200"> comprehensive electrical installations</span> — 
-              we design <span className="font-semibold text-green-600 dark:text-green-400">secure</span>, 
-              <span className="font-semibold text-blue-600 dark:text-blue-400"> scalable</span>, and 
-              <span className="font-semibold text-purple-600 dark:text-purple-400"> reliable systems</span> tailored to your business ambitions.
+            <p className="text-lg lg:text-xl leading-relaxed font-light">
+              From <span className="font-medium bg-gradient-to-r from-blue-700 to-blue-600 dark:from-blue-300 dark:to-blue-200 bg-clip-text text-transparent">robust cloud and network infrastructure</span>, 
+              <span className="font-medium bg-gradient-to-r from-emerald-700 to-emerald-600 dark:from-emerald-300 dark:to-emerald-200 bg-clip-text text-transparent"> custom software engineering</span>, and 
+              <span className="font-medium bg-gradient-to-r from-purple-700 to-purple-600 dark:from-purple-300 dark:to-purple-200 bg-clip-text text-transparent"> advanced data management</span> to 
+              <span className="font-medium bg-gradient-to-r from-rose-700 to-rose-600 dark:from-rose-300 dark:to-rose-200 bg-clip-text text-transparent"> 24/7 security and operations</span>,
+              <span className="font-medium bg-gradient-to-r from-amber-700 to-amber-600 dark:from-amber-300 dark:to-amber-200 bg-clip-text text-transparent"> solar systems installation</span>,
+              <span className="font-medium bg-gradient-to-r from-gray-700 to-gray-600 dark:from-gray-300 dark:to-gray-200 bg-clip-text text-transparent"> server racks and cabling</span>,
+              <span className="font-medium bg-gradient-to-r from-indigo-700 to-indigo-600 dark:from-indigo-300 dark:to-indigo-200 bg-clip-text text-transparent"> Internet of Things (IoT)</span>, and
+              <span className="font-medium bg-gradient-to-r from-orange-700 to-orange-600 dark:from-orange-300 dark:to-orange-200 bg-clip-text text-transparent"> comprehensive electrical installations</span> — 
+              we design <span className="font-semibold bg-gradient-to-r from-emerald-600 to-green-500 dark:from-emerald-400 dark:to-green-300 bg-clip-text text-transparent">secure</span>, 
+              <span className="font-semibold bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300 bg-clip-text text-transparent"> scalable</span>, and 
+              <span className="font-semibold bg-gradient-to-r from-purple-600 to-pink-500 dark:from-purple-400 dark:to-pink-300 bg-clip-text text-transparent"> reliable systems</span> tailored to your business ambitions.
             </p>
           </div>
 
@@ -81,64 +80,66 @@ export default function Hero() {
               <Mail size={20} className="relative z-10" />
               <span className="relative z-10">Get a Free Consultation</span>
             </Link>
-            <Link to="/services" className="group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-semibold py-4 px-8 rounded-2xl hover:border-brand-400 hover:text-brand-600 dark:hover:border-brand-500 dark:hover:text-brand-400 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3">
-              <Phone size={20} />
-              Our Services
+            <Link to="/services" className="group bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border-2 border-gray-300 dark:border-gray-600 font-semibold py-4 px-8 rounded-2xl hover:border-brand-400 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3">
+              <span className="bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-300 dark:to-white bg-clip-text text-transparent group-hover:bg-gradient-to-r group-hover:from-brand-600 group-hover:to-blue-600 dark:group-hover:from-brand-400 dark:group-hover:to-blue-400 transition-all duration-300">
+                Our Services
+              </span>
+              <Phone size={20} className="text-gray-700 dark:text-gray-300 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors duration-300" />
             </Link>
           </div>
 
           {/* Enhanced Features Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
             <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-green-200 dark:hover:border-green-800 transition-all duration-300 group">
-              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-green-500/25 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-emerald-500/25 group-hover:scale-110 transition-transform duration-300">
                 <ShieldCheck size={20} />
               </div>
               <div>
-                <p className="font-bold text-gray-900 dark:text-white">ISO 27001 Ready</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Policies & Audit Support</p>
+                <p className="font-bold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">ISO 27001 Ready</p>
+                <p className="text-sm bg-gradient-to-r from-gray-600 to-gray-500 dark:from-gray-400 dark:to-gray-300 bg-clip-text text-transparent">Policies & Audit Support</p>
               </div>
             </div>
             <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-200 dark:hover:border-blue-800 transition-all duration-300 group">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/25 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-500/25 group-hover:scale-110 transition-transform duration-300">
                 <Server size={20} />
               </div>
               <div>
-                <p className="font-bold text-gray-900 dark:text-white">24/7 Monitoring</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">SOC as a Service</p>
+                <p className="font-bold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">24/7 Monitoring</p>
+                <p className="text-sm bg-gradient-to-r from-gray-600 to-gray-500 dark:from-gray-400 dark:to-gray-300 bg-clip-text text-transparent">SOC as a Service</p>
               </div>
             </div>
             <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-purple-200 dark:hover:border-purple-800 transition-all duration-300 group">
-              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-purple-500/25 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-purple-500/25 group-hover:scale-110 transition-transform duration-300">
                 <Cable size={20} />
               </div>
               <div>
-                <p className="font-bold text-gray-900 dark:text-white">Infrastructure</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Racks & Cabling</p>
+                <p className="font-bold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">Infrastructure</p>
+                <p className="text-sm bg-gradient-to-r from-gray-600 to-gray-500 dark:from-gray-400 dark:to-gray-300 bg-clip-text text-transparent">Racks & Cabling</p>
               </div>
             </div>
             <div className="flex items-center gap-4 p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 hover:border-orange-200 dark:hover:border-orange-800 transition-all duration-300 group">
-              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-orange-500/25 group-hover:scale-110 transition-transform duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-orange-500/25 group-hover:scale-110 transition-transform duration-300">
                 <Zap size={20} />
               </div>
               <div>
-                <p className="font-bold text-gray-900 dark:text-white">Energy Solutions</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Solar & Electrical</p>
+                <p className="font-bold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">Energy Solutions</p>
+                <p className="text-sm bg-gradient-to-r from-gray-600 to-gray-500 dark:from-gray-400 dark:to-gray-300 bg-clip-text text-transparent">Solar & Electrical</p>
               </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Dual Image Layout */}
+        {/* Single Image Layout */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="space-y-6"
         >
-          {/* Original Technology Image */}
+          {/* Technology Image Only */}
           <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-gray-400/20 dark:shadow-black/30 group">
             <img
-              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-96 object-cover img-cover-full group-hover:scale-105 transition-transform duration-500"
               src="https://cdn-ialap.nitrocdn.com/bSxMvRMJjpvESeBpWPWSavCeSWXQHFjk/assets/images/optimized/rev-4f86c40/www.zucisystems.com/wp-content/uploads/2021/07/icon-internet-world-hands-businessman-network-technology-communication-scaled.jpg"
               alt="Global technology network and digital transformation"
             />
@@ -146,46 +147,30 @@ export default function Hero() {
             <div className="absolute bottom-4 left-4">
               <div className="flex items-center gap-2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl px-3 py-2">
                 <Cpu size={16} className="text-brand-600 dark:text-brand-400" />
-                <span className="text-sm font-semibold text-gray-900 dark:text-white">Digital Innovation</span>
-              </div>
-            </div>
-          </div>
-
-          {/* New Rack and Cable Management Image */}
-          <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-gray-400/20 dark:shadow-black/30 group">
-            <img
-              className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
-              src="https://bt-pon.com/wp-content/uploads/2021/11/How-To-Organize-Cables-In-Rack-Cabinet.jpg"
-              alt="Professional server rack and cable management infrastructure"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-            <div className="absolute bottom-4 left-4">
-              <div className="flex items-center gap-2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl px-3 py-2">
-                <Cable size={16} className="text-green-600 dark:text-green-400" />
-                <span className="text-sm font-semibold text-gray-900 dark:text-white">Infrastructure Excellence</span>
+                <span className="text-sm font-semibold bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">Digital Innovation</span>
               </div>
             </div>
           </div>
 
           {/* Service Highlights */}
           <div className="grid grid-cols-3 gap-4">
-            <div className="text-center p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white mx-auto mb-2">
+            <div className="text-left p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center text-white mb-2">
                 <ShieldCheck size={16} />
               </div>
-              <p className="text-xs font-semibold text-gray-700 dark:text-gray-300">Security</p>
+              <p className="text-xs font-semibold bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-300 dark:to-white bg-clip-text text-transparent">Security</p>
             </div>
-            <div className="text-center p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white mx-auto mb-2">
+            <div className="text-left p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50">
+              <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center text-white mb-2">
                 <Server size={16} />
               </div>
-              <p className="text-xs font-semibold text-gray-700 dark:text-gray-300">Infrastructure</p>
+              <p className="text-xs font-semibold bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-300 dark:to-white bg-clip-text text-transparent">Infrastructure</p>
             </div>
-            <div className="text-center p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50">
-              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center text-white mx-auto mb-2">
+            <div className="text-left p-4 rounded-2xl bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50">
+              <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center text-white mb-2">
                 <Wifi size={16} />
               </div>
-              <p className="text-xs font-semibold text-gray-700 dark:text-gray-300">Networking</p>
+              <p className="text-xs font-semibold bg-gradient-to-r from-gray-700 to-gray-900 dark:from-gray-300 dark:to-white bg-clip-text text-transparent">Networking</p>
             </div>
           </div>
         </motion.div>
