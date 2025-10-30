@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/20 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 min-h-screen flex items-center">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-32 w-80 h-80 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full blur-3xl"></div>
@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="w-3 h-3 bg-purple-400/20 rounded-full"></div>
       </div>
 
-      <div className="container-xl py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div className="container-xl py-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10 w-full">
         <motion.div
           initial={{ opacity: 0, x: -24 }}
           animate={{ opacity: 1, x: 0 }}
@@ -52,24 +52,24 @@ export default function Hero() {
 
           {/* Enhanced Description with Beautiful Typography */}
           <div className="space-y-4">
-            <p className="text-xl lg:text-2xl leading-relaxed font-light">
-              At <span className="font-semibold bg-gradient-to-r from-brand-600 to-blue-600 dark:from-brand-400 dark:to-blue-300 bg-clip-text text-transparent">Yollatec.com</span>, we deliver
-              all-inclusive <span className="font-semibold bg-gradient-to-r from-gray-800 to-gray-600 dark:from-white dark:to-gray-200 bg-clip-text text-transparent">end-to-end IT solutions</span> that help organizations thrive in
+            <p className="text-xl lg:text-2xl leading-relaxed font-light text-gray-700 dark:text-gray-300">
+              At <span className="font-semibold text-gray-900 dark:text-white">Yollatec.com</span>, we deliver
+              all-inclusive <span className="font-semibold text-gray-900 dark:text-white">end-to-end IT solutions</span> that help organizations thrive in
               the digital era.
             </p>
-            
-            <p className="text-lg lg:text-xl leading-relaxed font-light">
-              From <span className="font-medium bg-gradient-to-r from-blue-700 to-blue-600 dark:from-blue-300 dark:to-blue-200 bg-clip-text text-transparent">robust cloud and network infrastructure</span>, 
-              <span className="font-medium bg-gradient-to-r from-emerald-700 to-emerald-600 dark:from-emerald-300 dark:to-emerald-200 bg-clip-text text-transparent"> custom software engineering</span>, and 
-              <span className="font-medium bg-gradient-to-r from-purple-700 to-purple-600 dark:from-purple-300 dark:to-purple-200 bg-clip-text text-transparent"> advanced data management</span> to 
-              <span className="font-medium bg-gradient-to-r from-rose-700 to-rose-600 dark:from-rose-300 dark:to-rose-200 bg-clip-text text-transparent"> 24/7 security and operations</span>,
-              <span className="font-medium bg-gradient-to-r from-amber-700 to-amber-600 dark:from-amber-300 dark:to-amber-200 bg-clip-text text-transparent"> solar systems installation</span>,
-              <span className="font-medium bg-gradient-to-r from-gray-700 to-gray-600 dark:from-gray-300 dark:to-gray-200 bg-clip-text text-transparent"> server racks and cabling</span>,
-              <span className="font-medium bg-gradient-to-r from-indigo-700 to-indigo-600 dark:from-indigo-300 dark:to-indigo-200 bg-clip-text text-transparent"> Internet of Things (IoT)</span>, and
-              <span className="font-medium bg-gradient-to-r from-orange-700 to-orange-600 dark:from-orange-300 dark:to-orange-200 bg-clip-text text-transparent"> comprehensive electrical installations</span> — 
-              we design <span className="font-semibold bg-gradient-to-r from-emerald-600 to-green-500 dark:from-emerald-400 dark:to-green-300 bg-clip-text text-transparent">secure</span>, 
-              <span className="font-semibold bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-300 bg-clip-text text-transparent"> scalable</span>, and 
-              <span className="font-semibold bg-gradient-to-r from-purple-600 to-pink-500 dark:from-purple-400 dark:to-pink-300 bg-clip-text text-transparent"> reliable systems</span> tailored to your business ambitions.
+
+            <p className="text-lg lg:text-xl leading-relaxed font-light text-gray-700 dark:text-gray-300">
+              From <span className="font-medium text-gray-900 dark:text-white">robust cloud and network infrastructure</span>,
+              <span className="font-medium text-gray-900 dark:text-white"> custom software engineering</span>, and
+              <span className="font-medium text-gray-900 dark:text-white"> advanced data management</span> to
+              <span className="font-medium text-gray-900 dark:text-white"> 24/7 security and operations</span>,
+              <span className="font-medium text-gray-900 dark:text-white"> solar systems installation</span>,
+              <span className="font-medium text-gray-900 dark:text-white"> server racks and cabling</span>,
+              <span className="font-medium text-gray-900 dark:text-white"> Internet of Things (IoT)</span>, and
+              <span className="font-medium text-gray-900 dark:text-white"> comprehensive electrical installations</span> —
+              we design <span className="font-semibold text-gray-900 dark:text-white">secure</span>,
+              <span className="font-semibold text-gray-900 dark:text-white"> scalable</span>, and
+              <span className="font-semibold text-gray-900 dark:text-white"> reliable systems</span> tailored to your business ambitions.
             </p>
           </div>
 
