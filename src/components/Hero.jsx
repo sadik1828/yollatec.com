@@ -3,18 +3,15 @@ import {
   Phone,
   ShieldCheck,
   Server,
-  Cpu,
   Cable,
   Zap,
-  Wifi,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import HeroImage from "../assets/images/hero_image.png";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-white dark:bg-gray-900 flex items-center">
+    <section className="relative overflow-hidden bg-white dark:bg-gray-900 flex items-center" id="home">
       {/* Background Decorations */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute -top-32 -right-20 w-72 h-72 bg-blue-100 dark:bg-blue-900/20 rounded-full blur-3xl"></div>
@@ -38,23 +35,28 @@ export default function Hero() {
           </div>
 
           {/* Heading */}
-          <h1 className="text-2xl lg:text-3xl xl:text-4xl font-semibold leading-tight text-gray-900 dark:text-white">
-            Enabling Secure and Scalable Digital Operations
+          <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-gray-900 dark:text-white">
+            Technology Solutions That Work
           </h1>
+          
+          {/* Subheading */}
+          <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+            We build secure, reliable systems that help your business grow. From networks to software, we make technology work for you.
+          </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               to="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-7 rounded-lg shadow-md transition-all duration-200 flex items-center gap-2"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg shadow-md transition-all duration-200 flex items-center gap-2 justify-center"
             >
               <Mail size={18} />
-              Contact Us
+              Start a Project
             </Link>
 
             <Link
-              to="/services"
-              className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 font-medium py-3 px-7 rounded-lg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-200 flex items-center gap-2 text-gray-900 dark:text-white"
+              to="/solutions"
+              className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 font-medium py-3 px-8 rounded-lg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-200 flex items-center gap-2 justify-center text-gray-900 dark:text-white"
             >
               Our Services
               <Phone size={18} />
@@ -69,10 +71,10 @@ export default function Hero() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900 dark:text-white">
-                  ISO 27001 Ready
+                  Security First
                 </p>
                 <p className="text-sm text-gray-700 dark:text-gray-400">
-                  Compliance & Governance
+                  Protected systems
                 </p>
               </div>
             </div>
@@ -83,10 +85,10 @@ export default function Hero() {
               </div>
               <div>
                 <p className="font-semibold text-gray-900 dark:text-white">
-                  24/7 Monitoring
+                  Always On
                 </p>
                 <p className="text-sm text-gray-700 dark:text-gray-400">
-                  SOC Services
+                  24/7 monitoring
                 </p>
               </div>
             </div>
@@ -100,7 +102,7 @@ export default function Hero() {
                   Infrastructure
                 </p>
                 <p className="text-sm text-gray-700 dark:text-gray-400">
-                  Cabling & Racks
+                  Networks & cabling
                 </p>
               </div>
             </div>
@@ -114,33 +116,71 @@ export default function Hero() {
                   Energy Solutions
                 </p>
                 <p className="text-sm text-gray-700 dark:text-gray-400">
-                  Solar & Electrical
+                  Solar & power
                 </p>
               </div>
             </div>
           </div>
         </motion.div>
 
-        {/* Image Section */}
+        {/* SVG Illustration Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15 }}
-          className="hidden md:block"
+          className="hidden lg:flex items-center justify-center"
         >
-          <div className="relative overflow-hidden">
-            <img
-              src={HeroImage}
-              alt="Technology infrastructure illustration"
-              className="w-full  object-cover"
-              style={{ height: 500 }}
-            />
-            <div className="absolute bottom-4 left-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur px-3 py-2 rounded-lg flex items-center gap-2">
-              <Cpu size={16} className="text-blue-600" />
-              <span className="text-sm font-medium text-gray-700 dark:text-gray-200">
-                Infrastructure support
-              </span>
-            </div>
+          <div className="relative w-full max-w-lg">
+            <svg 
+              viewBox="0 0 400 400" 
+              className="w-full h-auto"
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {/* Background Circle */}
+              <circle cx="200" cy="200" r="180" fill="url(#gradient)" opacity="0.1"/>
+              
+              {/* Main Server/Cloud Structure */}
+              <rect x="120" y="140" width="160" height="80" rx="8" className="fill-blue-200 dark:fill-blue-900/30 stroke-blue-400 dark:stroke-blue-600" strokeWidth="2"/>
+              
+              {/* Server Racks */}
+              <rect x="130" y="150" width="20" height="60" rx="2" className="fill-blue-300 dark:fill-blue-800/40"/>
+              <rect x="160" y="150" width="20" height="60" rx="2" className="fill-blue-300 dark:fill-blue-800/40"/>
+              <rect x="190" y="150" width="20" height="60" rx="2" className="fill-blue-300 dark:fill-blue-800/40"/>
+              <rect x="220" y="150" width="20" height="60" rx="2" className="fill-blue-300 dark:fill-blue-800/40"/>
+              <rect x="250" y="150" width="20" height="60" rx="2" className="fill-blue-300 dark:fill-blue-800/40"/>
+              
+              {/* Network Connections */}
+              <path d="M100 200 L120 200" className="stroke-green-400 dark:stroke-green-600" strokeWidth="2" strokeDasharray="4 2"/>
+              <path d="M280 200 L300 200" className="stroke-green-400 dark:stroke-green-600" strokeWidth="2" strokeDasharray="4 2"/>
+              
+              {/* Security Shield */}
+              <path d="M320 120 Q320 80 280 80 Q240 80 240 120 L240 160 Q240 200 280 200 Q320 200 320 160 Z" 
+                    className="fill-emerald-200 dark:fill-emerald-900/30 stroke-emerald-400 dark:stroke-emerald-600" 
+                    strokeWidth="2"/>
+              <path d="M280 100 L280 140 L300 120 Z" className="fill-emerald-400 dark:fill-emerald-600"/>
+              
+              {/* Cloud/Network Nodes */}
+              <circle cx="80" cy="120" r="15" className="fill-purple-200 dark:fill-purple-900/30 stroke-purple-400 dark:stroke-purple-600" strokeWidth="2"/>
+              <circle cx="60" cy="180" r="12" className="fill-purple-200 dark:fill-purple-900/30 stroke-purple-400 dark:stroke-purple-600" strokeWidth="2"/>
+              <circle cx="100" cy="260" r="10" className="fill-purple-200 dark:fill-purple-900/30 stroke-purple-400 dark:stroke-purple-600" strokeWidth="2"/>
+              
+              {/* Connection Lines */}
+              <path d="M120 140 L120 100 L80 120" className="stroke-gray-400 dark:stroke-gray-600" strokeWidth="1" opacity="0.6"/>
+              <path d="M200 140 L200 100 L280 100" className="stroke-gray-400 dark:stroke-gray-600" strokeWidth="1" opacity="0.6"/>
+              <path d="M280 200 L320 200 L320 160" className="stroke-gray-400 dark:stroke-gray-600" strokeWidth="1" opacity="0.6"/>
+              
+              {/* Energy/Solar Symbol */}
+              <circle cx="340" cy="280" r="20" className="fill-amber-200 dark:fill-amber-900/30 stroke-amber-400 dark:stroke-amber-600" strokeWidth="2"/>
+              <path d="M340 260 L340 300 M325 275 L355 285 M325 285 L355 275" className="stroke-amber-400 dark:stroke-amber-600" strokeWidth="2"/>
+              
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#3B82F6" stopOpacity="0.3"/>
+                  <stop offset="100%" stopColor="#10B981" stopOpacity="0.3"/>
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
         </motion.div>
       </div>

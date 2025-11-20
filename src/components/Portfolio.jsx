@@ -1,4 +1,3 @@
-// components/Portfolio.jsx
 import React, { useState } from "react";
 import { X, Calendar, MapPin, Clock, Users } from "lucide-react";
 

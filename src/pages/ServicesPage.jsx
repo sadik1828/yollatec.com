@@ -10,7 +10,6 @@ export default function ServicesPage() {
         <p className="mt-2 text-gray-600">From cybersecurity to cloud and custom software.</p>
       </section>
       <Services />
-      <Contact />
     </>
   );
 }

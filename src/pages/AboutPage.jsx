@@ -10,7 +10,6 @@ export default function AboutPage() {
         <p className="mt-2 text-gray-600">Our story, values and expertise.</p>
       </section>
       <About />
-      <Contact />
     </>
   );
 }

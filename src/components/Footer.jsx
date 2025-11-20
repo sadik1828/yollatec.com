@@ -1,5 +1,3 @@
-// components/Footer.jsx
-import React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -18,27 +16,26 @@ export default function Footer() {
           <h5 className="font-semibold dark:text-white">Company</h5>
           <ul className="mt-3 space-y-2 text-sm">
             <li>
-              <Link to="/about" className="hover:underline text-gray-600 dark:text-gray-300">
+              <Link
+                to="/about"
+                className="hover:underline text-gray-600 dark:text-gray-300"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="/services" className="hover:underline text-gray-600 dark:text-gray-300">
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link to="/solutions" className="hover:underline text-gray-600 dark:text-gray-300">
+              <Link
+                to="/solutions"
+                className="hover:underline text-gray-600 dark:text-gray-300"
+              >
                 Solutions
               </Link>
             </li>
             <li>
-              <Link to="/portfolio" className="hover:underline text-gray-600 dark:text-gray-300">
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" className="hover:underline text-gray-600 dark:text-gray-300">
+              <Link
+                to="/contact"
+                className="hover:underline text-gray-600 dark:text-gray-300"
+              >
                 Contact
               </Link>
             </li>

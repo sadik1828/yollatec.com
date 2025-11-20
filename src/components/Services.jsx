@@ -1,5 +1,3 @@
-// components/Services.jsx
-import React from "react";
 import { Link } from "react-router-dom";
 import { services } from "../data/services";
 import {
@@ -117,12 +115,6 @@ export default function Services() {
                     <p className="mt-3 text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
                       {svc.summary}
                     </p>
-
-                    {/* Enhanced link affordance */}
-                    <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600 dark:text-brand-400 group-hover:text-brand-700 dark:group-hover:text-brand-300 transition-colors">
-                      <span>Learn more</span>
-                      <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
-                    </div>
                   </div>
                 </div>
               </Link>

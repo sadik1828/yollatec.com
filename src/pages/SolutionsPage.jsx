@@ -10,7 +10,6 @@ export default function SolutionsPage() {
         <p className="mt-2 text-gray-600">Purpose-built outcomes for your sector.</p>
       </section>
       <Solutions />
-      <Contact />
     </>
   );
 }

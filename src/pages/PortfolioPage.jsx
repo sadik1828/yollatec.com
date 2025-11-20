@@ -11,7 +11,6 @@ export default function PortfolioPage() {
         <p className="mt-2 text-gray-600">See our successful projects and case studies.</p>
       </section>
       <Portfolio />
-      <Contact />
     </>
   );
 }
