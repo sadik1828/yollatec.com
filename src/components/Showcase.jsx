@@ -1,39 +1,42 @@
-import React from "react";
+import Network from "../assets/images/network.png";
+import DC from "../assets/images/data-center-management.jpeg";
+import app from "../assets/images/app.avif";
+import soc from "../assets/images/soc-operator-image-1.jpg";
 
 const pics = [
   {
-    src: "https://www.clearnetwork.com/wp-content/uploads/2020/10/soc-operator-image-1.jpg",
-    caption: "Security Operations Center",
+    src: soc,
+    caption: "Security Operations Center (SOC)",
   },
   {
-    src: "https://tezhost.com/wp-content/uploads/2023/06/10-Best-Server-Management-Tools-and-their-Features.jpg",
-    caption: "Server Management Tools",
+    src: DC,
+    caption: "Data Centers Management",
   },
   {
-    src: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/337976457/original/d01dde56cd1e4143a2e7199f691f2dea5351685c/make-your-web-however-you-want.jpg",
+    src: app,
     caption: "Application Development",
   },
   {
-    src: "https://kellyofficesolutions.com/wp-content/uploads/2020/10/NMS.png",
-    caption: "Network Management Systems",
+    src: Network,
+    caption: "Network Management",
   },
 ];
 
 export default function Showcase() {
   return (
-    <section className="bg-white">
+    <section className="bg-white dark:bg-gray-900">
       <div className="container-xl py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {pics.map((p) => (
           <figure
             key={p.caption}
-            className="overflow-hidden rounded-xl border shadow-sm bg-white hover:shadow-lg transition"
+            className="overflow-hidden rounded-xl  shadow-sm bg-white dark:bg-gray-900  hover:shadow-lg transition"
           >
             <img
               src={p.src}
               alt={p.caption}
               className="h-56 w-full object-cover transition-transform duration-300 hover:scale-105"
             />
-            <figcaption className="px-4 py-3 text-sm font-medium text-gray-700">
+            <figcaption className="px-4 py-3 text-sm font-medium  text-gray-900 dark:text-white">
               {p.caption}
             </figcaption>
           </figure>

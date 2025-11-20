@@ -1,8 +1,8 @@
-// components/Header.jsx
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { ShieldCheck, Menu, X } from "lucide-react";
+import {  Menu, X } from "lucide-react";
 import ThemeToggle from "./ThemeToggle.jsx";
+import Logo from '../assets/images/yolla_logo.png'
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -31,8 +31,8 @@ export default function Header() {
       <div className="container-xl h-20 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 group">
-          <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-600 to-brand-700 text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-            <ShieldCheck size={20} />
+          <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br bg-white text-white shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+            <img src={Logo}/>
           </span>
           <div className="flex flex-col">
             <span className="font-bold text-xl dark:text-white">Yollatec</span>
