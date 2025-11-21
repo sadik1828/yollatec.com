@@ -1,16 +1,11 @@
-// App.jsx
-import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import AboutPage from "./pages/AboutPage.jsx";
-import ServicesPage from "./pages/ServicesPage.jsx";
 import SolutionsPage from "./pages/SolutionsPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
-import PortfolioPage from "./pages/PortfolioPage.jsx";
-import ServiceDetail from "./pages/ServiceDetail.jsx";
 
 export default function App() {
   return (

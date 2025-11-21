@@ -1,16 +1,9 @@
-// Simplified, more professional, but not drastically different Contact component
-// Tailwind + lucide-react, cleaner UI, less decorative effects
-
 import React, { useState } from "react";
 import {
   Mail,
   Phone,
   MapPin,
   Send,
-  User,
-  Building,
-  MessageCircle,
-  Navigation,
 } from "lucide-react";
 
 export default function Contact() {
